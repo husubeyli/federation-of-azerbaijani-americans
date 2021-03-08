@@ -1,0 +1,41 @@
+version: '3'
+services:
+    nginx-proxy:
+        image: jwilder/nginx-proxy
+        restart: "always"
+        ports:
+            - "80:80"
+        volumes:
+            - /var/run/docker.sock:/tmp/docker.sock:ro
+            - ./nginx/vhost/:/etc/nginx/vhost.d:ro
+            - ./nginx/conf.d/client_max_body_size.conf:/etc/nginx/conf.d/client_max_body_size.conf:ro
+            - ./static/:/ffa/static
+            - ./media/:/ffa/media  
+    postgres:
+        container_name: postgres_data
+        image: postgres:9.6
+        ports: 
+            - 5432:5432
+        volumes: 
+            - ./postgre_db:/var/lib/postgresql/
+        env_file: ./.env
+    web:
+        container_name: ffa
+        build: .
+        restart: "always"
+        ports:
+            - "8000:8000"
+        
+        volumes:
+            - .:/code/
+            # - ./static/:/code/static
+            # - ./media/:/code/media
+        depends_on:
+            - "postgres"
+        env_file: ./.env
+
+
+networks:
+  default:
+    external:
+      name: nginx-proxy

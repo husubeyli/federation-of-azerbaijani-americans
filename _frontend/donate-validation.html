@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+  <!-- Bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+    <!--Font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />    
+        <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+/* HEADINGS */
+
+h1, p {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  color: #000;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+/* BASIC SETUP */
+
+.page-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.nav-wrapper {
+  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  height: 100px;
+  overflow: hidden;
+}
+
+.navbar img {
+  height: 100%;
+  width: auto;
+  justify-self: start;
+  margin-left: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  justify-self: end;
+  
+}
+
+.nav-item a {
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+.nav-item a:hover {
+  color: #3498db;
+}
+.membership-btn{
+  width: 100%;
+}
+
+/* SECTIONS */
+
+.headline {
+  width: 100%;
+  height: 50vh;
+  min-height: 350px;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/jPLiQ-9/mountains-background-for-titles-intro-projects-and-etc_ew22rur3l__F0000.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features {
+  width: 100%;
+  height: auto;
+  background-color: #f1f1f1;
+  display: flex;
+  padding: 50px 20px;
+  justify-content: space-around;
+}
+
+.feature-container {
+  flex-basis: 30%;
+  margin-top: 10px;
+}
+
+.feature-container p {
+  color: #000;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.feature-container img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* MOBILE MENU & ANIMATION */
+
+.menu-toggle .bar{
+  width: 25px;
+  height: 3px;
+  background-color: #3f3f3f;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle {
+  justify-self: end;
+  margin-right: 25px;
+  display: none;
+}
+
+.menu-toggle:hover{
+  cursor: pointer;
+}
+
+#mobile-menu.is-active .bar:nth-child(2){
+  opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1){
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
+  -o-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3){
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* KEYFRAME ANIMATIONS */
+
+@-webkit-keyframes gradbar {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes gradbar {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes gradbar {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* Media Queries */
+
+  /* Mobile Devices - Phones/Tablets */
+
+@media only screen and (max-width: 720px) { 
+  .features {
+    flex-direction: column;
+    padding: 50px;
+  }
+  
+  /* MOBILE HEADINGS */
+  
+  h1 {
+    font-size: 1.9rem;
+  }
+  
+  h2 {
+    font-size: 1rem;
+  }
+  
+  p {
+    font-size: 0.8rem;
+  }
+  
+  /* MOBILE NAVIGATION */
+     
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: start;
+    top: 55px;
+    background-color: #fff;
+    width: 100%;
+    height: calc(100vh - 55px);
+    transform: translate(-101%);
+    text-align: right;
+    overflow: hidden;
+  }
+  
+  .navbar li {
+    padding: 15px;
+  }
+  
+  .navbar li:first-child {
+    margin-top: 50px;
+  }
+  
+  .navbar li a {
+    font-size: 1rem;
+  }
+   
+  .menu-toggle, .bar {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .mobile-nav {
+    margin-top: 40px;
+  transform: translate(0%)!important;
+}
+  
+  /* SECTIONS */
+  
+  .headline {
+    height: 20vh;
+  }
+    
+  .feature-container p {
+    margin-bottom: 25px;
+  }
+  
+  .feature-container {
+    margin-top: 20px;
+  }
+  
+  .feature-container:nth-child(2) {
+    order: -1;
+  }
+  
+  
+  
+}
+        </style>      
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+     <nav class="navbar">
+       <img src="./assets/images/logo.png" alt=" Logo">
+       <div class="menu-toggle" id="mobile-menu">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+       </div>
+       <ul class="nav no-search">  <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact Us</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#aboutus">About Us</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#membership">Membership for Benefits</a>
+    </li>
+    <li class="nav-item">
+        <a id="membership-btn" class="nav-link" href="./registration.html">Apply for Membership</a>
+    </li>
+        </ul>
+     </nav>
+     </div>
+     
+    
+   </div>
+    <!-- Donate Section Start -->
+    <section class="page-section" id="donate">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 id="content-header">The Federation of Azerbaijani Americans</h1>
+                    <p>
+                        The main objectives of the FAA are to establish close contacts with Azerbaijani Diaspora
+                        Organizations, to hold
+                        join events, to assist Azerbaijani immigrants with
+                        their integration into the American economy and
+                        culture, contribute to the development of the
+                        Azerbaijani diaspora in the United States and
+                        Canada by promoting the development of
+                        business of Azerbaijani origin in the
+                        US business environments.
+
+                    </p>
+                    <button id="donate-btn" class="buttons border-0">
+                     <a class="link-style" href="./donate.html">Donate</a>   
+                    </button>
+                </div>
+                <div class="col-md-6">
+<img class="right-img" src="./assets/images/right-illustration.png" alt="Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section End -->
+
+    <!-- Membership Section Start -->
+    <section class="page-section" id="membership">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading ">The FAA is ready to welcome you into membership</h2>
+                <hr class="section-line" style="width: 60px; margin: auto 48%;">
+                <h3 class="section-subheading ">Membership benefits</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3" id="first-img">
+                    <img class="membership-picture" src="./assets/images/Group 575.png" alt="">
+                    <p class="membership-text">Invitations to members-only events </p>
+                </div>
+                <div class="col-md-3">
+                    <img class="membership-picture" src="./assets/images/2.png" alt="">
+                    <p class="membership-text">Opportunity to an access to large business network
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img class="membership-picture" src="./assets/images/3.png" alt="">
+                    <p class="membership-text">Mentoring opportunities with Azerbaijanian</p>
+                </div>
+                <div class="col-md-3">
+                    <img class="membership-picture" src="/assets/images/4.png" alt="">
+                    <p class="membership-text">Inclusion in a variety of activities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Membership Section End -->
+
+
+
+<!-- About Section Start -->
+  <section class="page-section" id="aboutus">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading ">About us</h2>
+                <hr class="section-line" style="width: 60px; margin: auto 48%;">
+                <h3 class="section-subheading ">The Federation of Azerbaijani Americans</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-12" >
+                    <p class="aboutus-text">The Federation of Azerbaijani Americans Was founded on August 8, 2020 by Azerbaijani youth living in the States of the East Coast of the United States. It was officially registered as non-profit organization in September 2020 in New Jersey. The FAA is governed by the Board of Directors with executive responsibility and on August 14,2020 conducted its first election for the FAA 2020-2021 Presidency and Vice Presidency. In addition to the Board of Directors, the FAA has a Supervisory Board and General Assembly. 
+
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+<!-- About Section End -->
+<!-- Picture Section Start -->
+<section class="page-section" id="picture">
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 p-0">
+<img width="100%" src="./assets/images/about-us.png" alt="">
+</div>
+</div>
+</div>
+</section>
+
+<!-- Picture Section End -->
+
+<!-- Mission and Vision Section Start -->
+<section class="page-section" id="mission-vision">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<img style="width: 100%;" src="./assets/images/left-illustration.png" alt="">
+</div>
+<div class="col-md-6">
+<h3 class="text-heading">
+    Our missions and visions are:
+
+</h3>
+<p class="text-content">
+    To foster US public and political awareness about the geopolitical situation, opportunities, and strategic challenges of the Republic of Azerbaijan.
+</p>
+<br>
+<p class="text-content">
+    To participate more closely, more deeply, and in an organized manner in the political, cultural, and economic life of the United States as an Azerbaijani community.
+</p>
+<br>
+<p class="text-content">
+    To convey the national interests of the Republic of Azerbaijan to US public organizations, authorities, and leaders.
+</p>
+<br>
+<p class="text-content">
+    To achieve useful and effective cooperation between Azerbaijanis living in the United States.
+
+</p>
+<br>
+<p class="text-content">
+    To promote public support for the sustainable development of US-Azerbaijani relations.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission and Vision Section End -->
+
+<!-- Contact Section Start -->
+<section class="page-section" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="contact-heading text-uppercase">Contact Us</h2>
+            <hr class="section-line" style="width: 60px; margin: 50px 47%;">
+
+        </div>
+        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row align-items-stretch mb-5">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                   
+                 
+                <div class="col-12">
+                    <div class="form-group form-group-textarea mb-md-0">
+                        <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <div id="success"></div>
+                <button style="float: right;" class="btn btn-primary   " id="sendMessageButton" type="submit">Send </button>
+            </div>
+        </form>
+    </div>
+</section>
+   <!-- Footer -->
+<footer class="bg-light text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+  
+         <img src="./assets/images/logo.png" alt="Logo">
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="text-center col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 >stay in touch with us</h5>
+  
+          <ul class="list-unstyled mb-0 d-flex" >
+            <li>
+              <a href="#!" class="text-dark"><i  class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark"><i  class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark"><i  class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark"> <i class="fas fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+          <h5 class=" mb-0">subscribe</h5>
+          <br>
+  
+          <div id="footer-email" class="form-group bg-white border rounded px-2 py-2 mb-2">
+            <div class="row">
+                <div  class="col"> <input type="email" name="email"  class="form-control pl-3 shadow-none bg-transparent border-0" placeholder="Enter your email address"> </div>
+                <div class="col-auto"> <button type="submit" class="btn btn-block newsletter"> <img src="./assets/images/Vector.svg" alt=""></button> </div>
+            </div>
+        </div> 
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0)">
+      © 2021.All rights reserved    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+     $("#search-icon").click(function() {
+  $(".nav").toggleClass("search");
+  $(".nav").toggleClass("no-search");
+  $(".search-input").toggleClass("search-active");
+});
+
+$('.menu-toggle').click(function(){
+   $(".nav").toggleClass("mobile-nav");
+   $(this).toggleClass("is-active");
+});
+
+    </script>
+
+    
+</body>
+</html>

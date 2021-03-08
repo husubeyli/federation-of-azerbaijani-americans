@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding:0 !important;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: 0 !important;
+}
+.content-head{
+    margin-bottom: 40px;
+
+  }
+#done{
+    background-color:#3C50E0;
+    color: #ffffff;
+    border: none;
+    height: 3rem;
+    padding: 25px 50px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    border-radius: 4px; 
+    width:15em;
+    margin: 3rem;
+    margin-bottom: 40px;
+}
+#done:hover{
+    background-color: #0b1c8a;
+}
+.left{
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+.logo-img{
+    margin-bottom: 40px;
+}
+#resend-link{
+    text-decoration: none;
+    color: #5466e4;
+}
+
+/* Media Query */
+@media only screen and (max-width: 320px) {
+  #done{
+     margin-left: 10px;
+     margin-right: 10px;
+  }
+  .left{
+    padding-left:0;
+    
+}
+  }
+  
+ 
+  

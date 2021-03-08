@@ -1,0 +1,540 @@
+*{
+  font-family: "Montserrat", sans-serif;
+
+}
+
+
+.membership-picture{
+   
+    margin-bottom: 1rem;
+}
+#first-img{
+   margin-top: 0.8rem;
+}
+/* Section Membership */
+#membership{
+    background-color: #f4f6fe;
+}
+.section-line{
+    border: 2px solid #FCB300;
+    opacity: 1;
+}
+.section-heading{
+  color: black;
+  font-weight: bold;
+    margin: 50px auto 30px;
+    padding-top: 50px;
+    text-align: center;
+}
+.section-subheading{
+  color: black;
+    text-align: center;
+    margin:30px auto 67px;
+    font-weight: bold;
+    font-size: 28;
+
+}
+nav{
+  max-width: 1040px;
+}
+/* Section About */
+#donate{
+    margin:50px auto;
+}
+.aboutus-text{
+  margin-bottom: 40px;
+  line-height: 34px;
+}
+.right-img{
+width: 90%;
+}
+.text-heading{
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.text-content{
+  margin-bottom: 37px !important;
+  line-height: 24px;
+}
+
+/* Mission and Vision */
+#mission-vision{
+    margin-top: 89px;
+}
+
+#contact{
+  background-color:#f4f6fe;
+}
+#contactForm{
+  background-color: white !important;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+section#contact {
+    background-color: #f4f6fe ;
+   
+  }
+  section#contact .section-heading {
+    color: rgb(5, 5, 5);
+  }
+  section#contact form#contactForm .form-group {
+    margin-bottom: 1.5rem;
+  }
+  section#contact form#contactForm .form-group input,
+  section#contact form#contactForm .form-group textarea {
+    padding: 1.25rem;
+  }
+  section#contact form#contactForm .form-group input.form-control {
+    height: auto;
+    margin-bottom: 40px;
+  }
+  section#contact form#contactForm .form-group-textarea {
+    height: 100%;
+  }
+  section#contact form#contactForm .form-group-textarea textarea {
+    height: 100%;
+    min-height: 161px;
+    margin-bottom: 40px;
+  }
+  section#contact form#contactForm p.help-block {
+    margin: 0;
+  }
+  section#contact form#contactForm .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+  }
+  section#contact form#contactForm ::-webkit-input-placeholder {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 200;
+    font-style: regular;
+    color: #ced4da;
+  }
+  section#contact form#contactForm :-moz-placeholder {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 200;
+    color: #ced4da;
+  }
+  section#contact form#contactForm ::-moz-placeholder {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 200;
+    color: #ced4da;
+  }
+  section#contact form#contactForm :-ms-input-placeholder {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 200;
+    color: #ced4da;
+  }
+  .contact-heading{
+    margin: 50px auto 20px;
+    padding-top: 5rem;
+    text-align: center;
+}
+#contactForm{
+    background-color: white;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    border-radius: 5px;
+}
+#contact{
+    padding-bottom: 60px;
+}
+#sendMessageButton{
+    background-color: #3C50E0;
+    margin-bottom: 40px;
+    width: 165px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 50px;
+}
+.form-control{
+    background-color: #f3f3f3 ;
+}
+
+.input-group {
+    margin: 20px auto;
+    width: 100%;
+}
+input.btn.btn-lg {
+    width: 320px;
+    height: 100%;
+    float: left;
+  border-radius: 0;
+  background-color: #f4f6fe ;
+}
+
+.newsletter{
+    background-color:#3C50E0 ;
+}
+#footer-email{
+    background-color: #f4f6fe !important ;
+}
+
+.fas{
+    border: none !important;
+}
+
+p{
+  margin-bottom: 14px;
+}
+#donate-btn{
+  border: none;
+  margin-top: 33px;
+}
+
+#content-header{
+  font-weight: bold;
+  margin-bottom: 27px;
+  color: black;
+}
+#content-text{
+  text-align: left;
+  line-height: 29px;
+}
+.link-style{
+  text-decoration: none;
+  color: white;
+}
+.link-style:hover{
+  color: white;
+  background-color: #5062e4;
+
+}
+.link-style:visited{
+  color: white;
+}
+.link-style:active{
+  color: white;
+} 
+@media only screen and (max-width: 600px) {
+  .section-line{
+    margin: 40px 40% !important;
+  }
+  .head-logo{
+margin-right:  70% !important;  }
+}
+@media only screen and (max-width: 425px) {
+ul{
+  /* float: right; */
+  right: 0;
+}
+
+}
+@media only screen and (min-width: 425px) {
+
+  #sendMessageButton{
+   
+    float: right;
+  }
+  }
+/* @media only screen and (max-width: 375px) {
+  section#contact form#contactForm .form-group-textarea textarea {
+   width: 312px;
+  
+  }
+  } */
+  .logo{
+    padding-left: 10px;
+  }
+
+@media only screen and (min-width: 1400px) {
+  #sendMessageButton{
+   float: right;
+  }
+  }
+
+  @media only screen and (max-width: 800px) {
+  .logo{
+    margin-left: 0%;
+  }
+    }
+ @media only screen and (min-width: 1024px) {
+.nav-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 12px;
+}
+} 
+
+/* Media Query  */
+::placeholder {
+  color: black !important;
+  font-weight: 200;
+  opacity: 0.2;
+
+ /* Firefox */
+}
+/* .navbar-toggler{
+color: white;
+background-color: white;
+} */
+
+.list-unstyled{
+  align-items: center;
+}
+
+#message {
+  resize: none;
+} 
+
+
+footer ul li{
+  flex-wrap: wrap;
+}
+
+/* .logo{
+  margin-left: 111px ;
+/* } */
+/*
+@media only screen and (min-width: 1400px) {
+ .logo{
+   margin-left: 6%;
+ }
+ nav{
+  max-width: 1320px;
+ }
+  }
+  @media only screen and(min-width:1200px){
+    nav{max-width: 1140px;
+      
+    
+  }
+  }
+  @media only screen and(min-width:992px){
+    nav{
+      max-width: 960px;
+    
+    }
+  }
+  @media only screen and (min-width:768px){
+    nav{max-width:720px;
+    
+    }
+    
+  }
+ @media only screen and(min-widt:576px){
+   nav{
+     max-width: 540px;
+   
+    
+   }
+ } */
+ @media only screen and (min-width: 1440px)  {
+  .logo{
+    margin-left: 0%;
+  }
+}
+  /* nav{
+  width: 90%;
+  } */
+   /* } */
+
+  /* @media only screen and (min-width: 1440px) and (max-device-width:2600px) {
+   
+    nav{
+    width: 90%;
+    } */
+     /* } */
+  
+    
+  
+       /* @media only screen and (min-width: 1630px) and (max-device-width:1830px) {
+        nav{
+          width: 80%;
+        }
+       
+         }
+         @media only screen and (min-width: 1830px) and (max-device-width:2660px) {
+          nav{
+            width: 60%;
+          }
+         
+           } */
+  @media only screen and (min-width: 768px) and (max-device-width:991px){
+    .bottom-picture{
+      padding-left: 0px  !important;
+    }
+     }
+
+     @media only screen and (min-width: 768px) and (max-device-width:1024px){
+      .nav-links {
+      
+        
+
+    } 
+    .nav-links a {
+     
+      font-size: 12px;
+  }
+    .logo{
+      margin-top: 10px;
+      margin-left: 0%;
+    }
+  }
+  @media only screen and (min-width: 788px) and (max-device-width:992px){
+  
+ 
+  .logo{
+    margin-top: 10px;
+    margin-left: 0%;
+  }
+}
+    @media only screen and (min-width: 429px) and (max-device-width:768px){
+   
+    .logo{
+      margin-top: 10px;
+      margin-left: 6%;
+    }
+    
+       }
+       @media only screen and (min-width: 1024px) and (max-device-width:1140px){
+        .nav-links {
+          /* padding-left:0px!important; */
+          /* margin-left: 0px !important; */
+  
+      }   .nav-links li a {
+        padding-left:10px!important;
+        /* margin-left: 10px !important; */
+    } 
+     .nav-links a {
+     
+      font-size: 12px !important;
+  }
+      .logo{
+        margin-top: 10px;
+       margin-left: 0%;
+      }
+      
+         }
+
+     /* @media only screen and (min-width: 2560px) {
+      nav{
+        width: 57%;
+      }
+       }
+       
+       @media only screen and (min-width: 2880px) {
+        nav{
+          width: 50%;
+        }
+         }
+       @media only screen and (min-width: 3072px) {
+        nav{
+          width: 45%;
+        }
+         } */
+
+  @media only screen and (max-width: 425px) {
+  .logo{
+    margin-left: 0%;
+    margin-top: 5px;
+    padding-left: 10px;
+  }
+  #sendMessageButton{
+    width:100%
+  }
+    }
+    i{
+      width: 20px;
+      height: 20px;
+    }
+    #stay-in-touch{
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+    .footer-contain {
+      padding-top: 93px;
+    }
+    .subscribe {
+      font-weight: 600;
+    }
+
+.right-img{
+  margin-bottom: 14px;
+}
+
+.membership-text{
+  margin-bottom: 178px;
+}
+
+.grid-example {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 1%;
+  grid-template-areas: "nm nm . . nvb nvb nvb nvb nvb nvb nvb nvb";
+}
+#left-empty{
+  grid-area: nm;
+
+}
+#right-text-mision{
+  grid-area: nvb;
+
+}
+.vision{
+  background-image: url("../images/left-illustration.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.second{
+  display: none;
+}
+.first{
+  display: block;
+}
+@media only screen and (max-width: 800px){
+  .second{
+  display: block;
+}  
+@media only screen and (max-width: 425px){
+   .text-content{
+     margin-bottom: 0!important;
+   }
+   #mission-vision {
+    margin-top: 21px;
+}
+.aboutus-text {
+  margin-bottom: 0px;
+}
+} 
+.first{
+  display: none;
+}
+}
+.four-hide{
+  display: none;
+}
+.third-hide{
+  display: block;
+}
+    @media only screen and (max-width: 900px){
+  .four-hide{
+  margin-top: 21px;
+  display: block;
+}  
+.third-hide{
+  display: none;
+}
+.picture-left{
+  display: none;
+}
+.grid-example {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 1%;
+  grid-template-areas: "nvb nvb nvb nvb nvb nvb nvb nvb nvb nvb nvb nvb";
+}
+
+}
+  
+
+
+.grid-columfooter-icon {
+        display: inline-flex;
+      }
+      .grid-columfooter-icon>li>a{
+        padding: 0 22px;
+      }

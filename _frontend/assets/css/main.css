@@ -1,0 +1,190 @@
+.membership-picture{
+    margin-bottom: 1rem;
+}
+#first-img{
+   margin-top: 0.8rem;
+}
+/* Section Membership */
+#membership{
+    background-color: #f4f6fe;
+}
+.section-line{
+    border: 2px solid #FCB300;
+    opacity: 1;
+}
+.section-heading{
+    margin: 50px auto 30px;
+    padding-top: 50px;
+    text-align: center;
+}
+.section-subheading{
+    text-align: center;
+    margin:30px auto 30px;
+}
+/* Section About */
+#donate{
+    margin:50px auto;
+}
+.right-img{
+width: 90%;}
+
+/* Mission and Vision */
+#mission-vision{
+    margin-top: 3rem;
+}
+
+#contact{
+  background-color: white !important;
+}
+
+section#contact {
+    background-color: #f4f6fe ;
+   
+  }
+  section#contact .section-heading {
+    color: rgb(5, 5, 5);
+  }
+  section#contact form#contactForm .form-group {
+    margin-bottom: 1.5rem;
+  }
+  section#contact form#contactForm .form-group input,
+  section#contact form#contactForm .form-group textarea {
+    padding: 1.25rem;
+  }
+  section#contact form#contactForm .form-group input.form-control {
+    height: auto;
+    margin-bottom: 30px;
+  }
+  section#contact form#contactForm .form-group-textarea {
+    height: 100%;
+  }
+  section#contact form#contactForm .form-group-textarea textarea {
+    height: 100%;
+    min-height: 10rem;
+    margin-bottom: 40px;
+  }
+  section#contact form#contactForm p.help-block {
+    margin: 0;
+  }
+  section#contact form#contactForm .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+  }
+  section#contact form#contactForm ::-webkit-input-placeholder {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    color: #ced4da;
+  }
+  section#contact form#contactForm :-moz-placeholder {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    color: #ced4da;
+  }
+  section#contact form#contactForm ::-moz-placeholder {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    color: #ced4da;
+  }
+  section#contact form#contactForm :-ms-input-placeholder {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    color: #ced4da;
+  }
+  .contact-heading{
+    margin: 50px auto 20px;
+    padding-top: 5rem;
+    text-align: center;
+}
+#contactForm{
+    background-color: white;
+    padding-top: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    
+    border-radius: 5px;
+}
+#contact{
+    padding-bottom: 60px;
+}
+#sendMessageButton{
+    background-color: #3C50E0;
+    margin-bottom: 40px;
+    width: 165px;
+}
+.form-control{
+    background-color: #f3f3f3 ;
+}
+
+.input-group {
+    margin: 20px auto;
+    width: 100%;
+}
+input.btn.btn-lg {
+    width: 320px;
+    height: 100%;
+    float: left;
+  border-radius: 0;
+  background-color: #f4f6fe ;
+}
+
+.newsletter{
+    background-color:#3C50E0 ;
+}
+#footer-email{
+    background-color: #f4f6fe !important ;
+}
+
+.fas{
+    border: none !important;
+}
+
+p{
+  margin-bottom: 30px;
+}
+#donate-btn{
+  border: none;
+  margin-top: 40px;
+}
+#content-header{
+  margin-bottom: 30px;
+}
+
+.link-style{
+  text-decoration: none;
+  color: white;
+}
+.link-style:hover{
+  color: white;
+}
+.link-style:visited{
+  color: white;
+}
+.link-style:active{
+  color: white;
+} 
+@media only screen and (max-width: 600px) {
+  .section-line{
+    margin: auto 40% !important;
+  }
+  .head-logo{
+margin-right:  70% !important;  }
+}
+@media only screen and (max-width: 425px) {
+ul{
+  float: right;
+  right: 0;
+}
+}
+/* @media only screen and (min-width: 1024px) {
+ .text-dark{
+   margin-right: 10px;
+ }
+} */
+
+/* Media Query  */
+
+.navbar-toggler{
+color: white;
+background-color: white;
+}
+

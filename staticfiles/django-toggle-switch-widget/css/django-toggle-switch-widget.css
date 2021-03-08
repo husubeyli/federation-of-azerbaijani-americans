@@ -1,0 +1,117 @@
+label.django-toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 56px;
+    height: 28px;
+    padding: 0;
+}
+@media (max-width: 767px) {
+    .aligned label.django-toggle-switch {
+        width: 56px;
+        padding: 0;
+    }
+}
+
+.aligned label.django-toggle-switch + .vCheckboxLabel {
+    line-height: 28px;
+}
+
+label.django-toggle-switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.django-toggle-switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.django-toggle-switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.django-toggle-switch-primary input:checked + .django-toggle-switch-slider,
+input:checked + .django-toggle-switch-slider {
+    background-color: #79aec8;
+}
+.django-toggle-switch-primary input:focus + .django-toggle-switch-slider
+input:focus + .django-toggle-switch-slider {
+    box-shadow: 0 0 1px #79aec8;
+}
+
+.django-toggle-switch-dark-primary input:checked + .django-toggle-switch-slider,
+input:checked + .django-toggle-switch-slider {
+    background-color: #417690;
+}
+.django-toggle-switch-dark-primary input:focus + .django-toggle-switch-slider
+input:focus + .django-toggle-switch-slider {
+    box-shadow: 0 0 1px #417690;
+}
+
+
+.django-toggle-switch-danger input:checked + .django-toggle-switch-slider,
+input:checked + .django-toggle-switch-slider {
+    background-color: #ba2121;
+}
+.django-toggle-switch-danger input:focus + .django-toggle-switch-slider
+input:focus + .django-toggle-switch-slider {
+    box-shadow: 0 0 1px #ba2121;
+}
+
+
+.django-toggle-switch-warning input:checked + .django-toggle-switch-slider,
+input:checked + .django-toggle-switch-slider {
+    background-color: #ff6a00;
+}
+.django-toggle-switch-warning input:focus + .django-toggle-switch-slider
+input:focus + .django-toggle-switch-slider {
+    box-shadow: 0 0 1px #ff6a00;
+}
+
+
+.django-toggle-switch-success input:checked + .django-toggle-switch-slider,
+input:checked + .django-toggle-switch-slider {
+    background-color: #06ad3d;
+}
+.django-toggle-switch-success input:focus + .django-toggle-switch-slider
+input:focus + .django-toggle-switch-slider {
+    box-shadow: 0 0 1px #06ad3d;
+}
+
+
+input:checked + .django-toggle-switch-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.django-toggle-switch-slider.round {
+    border-radius: 28px;
+}
+
+.django-toggle-switch-slider.round:before {
+    border-radius: 50%;
+}
+
+/* Fix help_text display problem */
+form .aligned .django-toggle-switch + div.help {
+    margin-left: 160px;
+    padding-left: 10px;
+}

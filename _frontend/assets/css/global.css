@@ -1,0 +1,59 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+*:focus {
+    outline: 0 !important;
+}
+
+nav{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight:400;
+    margin-left: 1rem;
+}
+nav ul li a:link {
+    color: rgb(0, 0, 0);
+}
+
+nav ul li a:visited {
+    color: rgb(0, 0, 0);  
+    border-bottom: 2px solid #FCB300;
+
+
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #FCB300;
+
+    color: rgb(0, 0, 0);
+
+}
+
+nav ul li a:active {
+    color: rgb(255, 0, 0);
+    border-bottom: 2px solid #FCB300;
+
+}
+nav ul li #membership-btn {
+    color: #3C50E0;
+    border: 2px solid  #3C50E0;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.buttons{
+    width: 300px;
+    background-color: #3C50E0;
+    color: white;
+    border-radius: 4px;
+    padding: 1rem;
+    border: none;
+}
+
+

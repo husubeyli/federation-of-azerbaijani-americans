@@ -1,0 +1,144 @@
+*:focus {
+    outline: 0 !important;
+}
+*{
+    font-family: "Montserrat", sans-serif !important;
+}
+#ananoymous {
+    display: inline-block;
+    background-color: #fff;
+    color: #3c50e0;
+    border: 1px solid #3c50e0;
+    padding: 14px 30px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 510px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#became-member {
+    text-decoration: none;
+    color: #3c50e0;
+}
+.form-elements {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px !important;
+    padding-right: 0px !important;
+    width: 510px;
+    background-color: #f3f3f3;
+    font-size: 17px;
+    border: 1px solid #d4d4d4;
+}
+
+.right {
+    text-align: center;
+    margin-top: 2rem;
+}
+#simple {
+    display: inline-block;
+    background-color: #3c50e0;
+    color: #ffffff;
+    border: none;
+    padding: 14px 30px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 4px;
+    width:510px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+    
+}
+
+
+
+
+#section-header {
+    margin: 50px auto 30px;
+}
+#section-text {
+    margin-bottom: 30px;
+}
+
+input {
+    border-radius: 4px;
+    padding: 10px;
+    width: 510px;
+    background-color: #f3f3f3;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #d4d4d4;
+}
+*{
+    font-family: "Montserrat", sans-serif;
+  
+  }
+
+/* Media Query  */
+
+@media only screen and (max-width: 320px) {
+    .right {
+        margin-left: 0 !important;
+    }
+    #left{
+        width :420px;
+    }
+    
+}
+@media only screen and (min-width: 2560px) {
+  .form-elements{
+      display: block;
+      margin: auto;
+  }
+    
+}
+
+@media only screen and (max-width: 375px) {
+    .right {
+        margin-left: 0 !important;
+    }
+    #left{
+        width :375px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .right {
+        margin-left: 0 !important;
+    }
+    #left{
+        width :425px;
+    }
+}
+@media only screen and (max-width: 768px) {
+   #left{
+       width: 18rem;
+   }
+   #simple{
+       width: 18rem;
+   }
+   #ananoymous{
+       width: 18rem;
+   }
+   .form-elements{
+       width:18rem;
+   }
+}
+
+
+.container-fluid{
+    background-image: url(../images/left-illustration.png);
+    background-repeat: no-repeat;
+    
+}
+#simple:hover{
+    background-color: #5062e4;
+
+}
+#ananoymous:hover{
+    background-color: #5062e4;
+  color: white;
+}

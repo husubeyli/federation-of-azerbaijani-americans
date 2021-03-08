@@ -1,0 +1,6 @@
+location /static/ {
+    alias /ffa/static/;
+}
+location /media/ {
+    alias /ffa/media/;
+}
