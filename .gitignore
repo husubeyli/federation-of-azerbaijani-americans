@@ -1,0 +1,4 @@
+postgre_db/
+_frontend/
+.venv/
+.DS_Store
